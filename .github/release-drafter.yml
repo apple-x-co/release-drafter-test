@@ -1,6 +1,5 @@
 name-template: 'v$RESOLVED_VERSION 🌈'
 tag-template: 'v$RESOLVED_VERSION'
-
 categories:
   - title: '🚀 Features'
     labels:
@@ -21,11 +20,8 @@ categories:
     label: 'documentation'
   - title: '⛓️ Dependency update'
     label: 'dependencies'
-
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
-
 version-resolver:
   major:
     labels:
@@ -37,11 +33,10 @@ version-resolver:
     labels:
       - 'patch'
   default: patch
-
 template: |
   ## Changes
-  $CHANGES
 
+  $CHANGES
 autolabeler:
   - label: feature
     branch:
