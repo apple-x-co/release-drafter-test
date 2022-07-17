@@ -96,5 +96,5 @@ jobs:
         with:
           draft: false
           prerelease: false
-          name: ${{ needs.release_draft.outputs.name }}
+          tag_name: ${{ needs.release_draft.outputs.name }}
           files: release-drafter-test.phar
