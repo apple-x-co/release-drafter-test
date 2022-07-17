@@ -1,0 +1,23 @@
+{
+  "name": "apple-x-co/release-drafter-test",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "sanokouhei",
+      "email": "email@example.com"
+    }
+  ],
+  "bin": [
+    "bin/run.php"
+  ],
+  "require": {
+  },
+  "require-dev": {
+  },
+  "scripts": {
+    "phar-composer-latest": "curl -JOL https://clue.engineering/phar-composer-latest.phar;",
+    "build": "php -d phar.readonly=off ./phar-composer-1.4.0.phar build ."
+  }
+}
