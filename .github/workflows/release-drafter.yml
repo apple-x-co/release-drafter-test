@@ -97,6 +97,4 @@ jobs:
           draft: false
           prerelease: false
           name: ${{ needs.release_draft.outputs.name }}
-          tag_name: ${{ needs.release_draft.outputs.name }}
-          body: ${{ needs.release_draft.outputs.body }}
           files: release-drafter-test.phar
