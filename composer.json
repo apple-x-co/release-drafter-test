@@ -18,6 +18,6 @@
   },
   "scripts": {
     "phar-composer-latest": "curl -JOL https://clue.engineering/phar-composer-latest.phar;",
-    "build": "php ./phar-composer-1.4.0.phar build ."
+    "build": "php -d phar.readonly=off ./phar-composer-1.4.0.phar build ."
   }
 }
