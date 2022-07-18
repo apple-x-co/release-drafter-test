@@ -37,9 +37,9 @@ jobs:
 #
 #      - name: Install dependencies
 #        run: composer install --no-interaction --no-progress --prefer-dist
-#
-#      - name: Download latest phar-composer.phar
-#        run: composer run-script download-phar-composer
+
+      - name: Download latest phar-composer.phar
+        run: composer run-script download-phar-composer
 
       - name: Build phar
         run: composer run-script build
