@@ -18,6 +18,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '5.6'
+          coverage: "none"
+          ini-values: "memory_limit=-1"
 
 #      - name: Setup PHP
 #        uses: shivammathur/setup-php@v2
